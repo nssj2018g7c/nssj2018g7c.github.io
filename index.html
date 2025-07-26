@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>喵喵喵同学录 - By meowjiao</title>
+        <title>济南市南上山街小学2018级7班同学录 - By meowjiao</title>
     </head>
     <style>
         body {
@@ -40,7 +40,7 @@
         a:hover {
             text-decoration: none;
         }
-        .button_css {
+        .button {
             font-size: 45px;
             opacity: 0;
             transition: opacity 1.5s;
@@ -49,7 +49,7 @@
             margin: 10px;
             padding: 10px;
         }
-        .button_css:hover {
+        .button:hover {
             transform: scale(1.07);
             transition: 0.3s;
         }
@@ -69,7 +69,7 @@
                 <span class="color_1">和</span>
                 <span class="color_2">一个网站</span>
             </div>
-            <div id="start_button_1" class="button_css">
+            <div id="start_button" class="button">
                 <a href="./main.html">开启时空胶囊</a>
             </div>
         </div>
@@ -78,20 +78,15 @@
                 return new Promise((resolve) => setTimeout(resolve, time));
             }
             async function start_fade() {
-                const start_1 = document.getElementById("start_text_1");
-                start_1.style.opacity = 1;
+                document.getElementById("start_text_1").style.opacity = 1;
                 await sleep(1500);
-                const start_2 = document.getElementById("start_text_2");
-                start_2.style.opacity = 1;
+                document.getElementById("start_text_2").style.opacity = 1;
                 await sleep(1500);
-                const start_3 = document.getElementById("start_text_3");
-                start_3.style.opacity = 1;
+                document.getElementById("start_text_3").style.opacity = 1;
                 await sleep(1500);
-                const start_4 = document.getElementById("start_text_4");
-                start_4.style.opacity = 1;
+                document.getElementById("start_text_4").style.opacity = 1;
                 await sleep(1500);
-                const start_button = document.getElementById("start_button_1");
-                start_button.style.opacity = 1;
+                document.getElementById("start_button").style.opacity = 1;
                 await sleep(1500);
             }
             window.addEventListener("load", () => start_fade());
